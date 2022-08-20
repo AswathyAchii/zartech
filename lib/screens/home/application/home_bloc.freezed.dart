@@ -167,7 +167,13 @@ abstract class _GetRestaurantData implements HomeEvent {
 /// @nodoc
 mixin _$HomeState {
   bool get isLoading => throw _privateConstructorUsedError;
-  String get result => throw _privateConstructorUsedError;
+  List<RestaurantDataModel>? get result => throw _privateConstructorUsedError;
+  List<TableMenuList>? get tabMenuListDataModel =>
+      throw _privateConstructorUsedError;
+  List<CategoryDishes>? get categoryDishesDataModel =>
+      throw _privateConstructorUsedError;
+  List<Tab> get tabs => throw _privateConstructorUsedError;
+  int get length => throw _privateConstructorUsedError;
   Option<Either<HomeFailure, List<RestaurantDataModel>>>
       get saveFailureOrSuccessOption => throw _privateConstructorUsedError;
 
@@ -182,7 +188,11 @@ abstract class $HomeStateCopyWith<$Res> {
       _$HomeStateCopyWithImpl<$Res>;
   $Res call(
       {bool isLoading,
-      String result,
+      List<RestaurantDataModel>? result,
+      List<TableMenuList>? tabMenuListDataModel,
+      List<CategoryDishes>? categoryDishesDataModel,
+      List<Tab> tabs,
+      int length,
       Option<Either<HomeFailure, List<RestaurantDataModel>>>
           saveFailureOrSuccessOption});
 }
@@ -199,6 +209,10 @@ class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
   $Res call({
     Object? isLoading = freezed,
     Object? result = freezed,
+    Object? tabMenuListDataModel = freezed,
+    Object? categoryDishesDataModel = freezed,
+    Object? tabs = freezed,
+    Object? length = freezed,
     Object? saveFailureOrSuccessOption = freezed,
   }) {
     return _then(_value.copyWith(
@@ -209,7 +223,23 @@ class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
       result: result == freezed
           ? _value.result
           : result // ignore: cast_nullable_to_non_nullable
-              as String,
+              as List<RestaurantDataModel>?,
+      tabMenuListDataModel: tabMenuListDataModel == freezed
+          ? _value.tabMenuListDataModel
+          : tabMenuListDataModel // ignore: cast_nullable_to_non_nullable
+              as List<TableMenuList>?,
+      categoryDishesDataModel: categoryDishesDataModel == freezed
+          ? _value.categoryDishesDataModel
+          : categoryDishesDataModel // ignore: cast_nullable_to_non_nullable
+              as List<CategoryDishes>?,
+      tabs: tabs == freezed
+          ? _value.tabs
+          : tabs // ignore: cast_nullable_to_non_nullable
+              as List<Tab>,
+      length: length == freezed
+          ? _value.length
+          : length // ignore: cast_nullable_to_non_nullable
+              as int,
       saveFailureOrSuccessOption: saveFailureOrSuccessOption == freezed
           ? _value.saveFailureOrSuccessOption
           : saveFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
@@ -226,7 +256,11 @@ abstract class _$$_HomeStateCopyWith<$Res> implements $HomeStateCopyWith<$Res> {
   @override
   $Res call(
       {bool isLoading,
-      String result,
+      List<RestaurantDataModel>? result,
+      List<TableMenuList>? tabMenuListDataModel,
+      List<CategoryDishes>? categoryDishesDataModel,
+      List<Tab> tabs,
+      int length,
       Option<Either<HomeFailure, List<RestaurantDataModel>>>
           saveFailureOrSuccessOption});
 }
@@ -245,6 +279,10 @@ class __$$_HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
   $Res call({
     Object? isLoading = freezed,
     Object? result = freezed,
+    Object? tabMenuListDataModel = freezed,
+    Object? categoryDishesDataModel = freezed,
+    Object? tabs = freezed,
+    Object? length = freezed,
     Object? saveFailureOrSuccessOption = freezed,
   }) {
     return _then(_$_HomeState(
@@ -253,9 +291,25 @@ class __$$_HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
       result: result == freezed
-          ? _value.result
+          ? _value._result
           : result // ignore: cast_nullable_to_non_nullable
-              as String,
+              as List<RestaurantDataModel>?,
+      tabMenuListDataModel: tabMenuListDataModel == freezed
+          ? _value._tabMenuListDataModel
+          : tabMenuListDataModel // ignore: cast_nullable_to_non_nullable
+              as List<TableMenuList>?,
+      categoryDishesDataModel: categoryDishesDataModel == freezed
+          ? _value._categoryDishesDataModel
+          : categoryDishesDataModel // ignore: cast_nullable_to_non_nullable
+              as List<CategoryDishes>?,
+      tabs: tabs == freezed
+          ? _value._tabs
+          : tabs // ignore: cast_nullable_to_non_nullable
+              as List<Tab>,
+      length: length == freezed
+          ? _value.length
+          : length // ignore: cast_nullable_to_non_nullable
+              as int,
       saveFailureOrSuccessOption: saveFailureOrSuccessOption == freezed
           ? _value.saveFailureOrSuccessOption
           : saveFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
@@ -269,20 +323,62 @@ class __$$_HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
 class _$_HomeState implements _HomeState {
   _$_HomeState(
       {required this.isLoading,
-      required this.result,
-      required this.saveFailureOrSuccessOption});
+      final List<RestaurantDataModel>? result,
+      final List<TableMenuList>? tabMenuListDataModel,
+      final List<CategoryDishes>? categoryDishesDataModel,
+      required final List<Tab> tabs,
+      required this.length,
+      required this.saveFailureOrSuccessOption})
+      : _result = result,
+        _tabMenuListDataModel = tabMenuListDataModel,
+        _categoryDishesDataModel = categoryDishesDataModel,
+        _tabs = tabs;
 
   @override
   final bool isLoading;
+  final List<RestaurantDataModel>? _result;
   @override
-  final String result;
+  List<RestaurantDataModel>? get result {
+    final value = _result;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<TableMenuList>? _tabMenuListDataModel;
+  @override
+  List<TableMenuList>? get tabMenuListDataModel {
+    final value = _tabMenuListDataModel;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<CategoryDishes>? _categoryDishesDataModel;
+  @override
+  List<CategoryDishes>? get categoryDishesDataModel {
+    final value = _categoryDishesDataModel;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  final List<Tab> _tabs;
+  @override
+  List<Tab> get tabs {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_tabs);
+  }
+
+  @override
+  final int length;
   @override
   final Option<Either<HomeFailure, List<RestaurantDataModel>>>
       saveFailureOrSuccessOption;
 
   @override
   String toString() {
-    return 'HomeState(isLoading: $isLoading, result: $result, saveFailureOrSuccessOption: $saveFailureOrSuccessOption)';
+    return 'HomeState(isLoading: $isLoading, result: $result, tabMenuListDataModel: $tabMenuListDataModel, categoryDishesDataModel: $categoryDishesDataModel, tabs: $tabs, length: $length, saveFailureOrSuccessOption: $saveFailureOrSuccessOption)';
   }
 
   @override
@@ -291,7 +387,13 @@ class _$_HomeState implements _HomeState {
         (other.runtimeType == runtimeType &&
             other is _$_HomeState &&
             const DeepCollectionEquality().equals(other.isLoading, isLoading) &&
-            const DeepCollectionEquality().equals(other.result, result) &&
+            const DeepCollectionEquality().equals(other._result, _result) &&
+            const DeepCollectionEquality()
+                .equals(other._tabMenuListDataModel, _tabMenuListDataModel) &&
+            const DeepCollectionEquality().equals(
+                other._categoryDishesDataModel, _categoryDishesDataModel) &&
+            const DeepCollectionEquality().equals(other._tabs, _tabs) &&
+            const DeepCollectionEquality().equals(other.length, length) &&
             const DeepCollectionEquality().equals(
                 other.saveFailureOrSuccessOption, saveFailureOrSuccessOption));
   }
@@ -300,7 +402,11 @@ class _$_HomeState implements _HomeState {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(isLoading),
-      const DeepCollectionEquality().hash(result),
+      const DeepCollectionEquality().hash(_result),
+      const DeepCollectionEquality().hash(_tabMenuListDataModel),
+      const DeepCollectionEquality().hash(_categoryDishesDataModel),
+      const DeepCollectionEquality().hash(_tabs),
+      const DeepCollectionEquality().hash(length),
       const DeepCollectionEquality().hash(saveFailureOrSuccessOption));
 
   @JsonKey(ignore: true)
@@ -312,14 +418,26 @@ class _$_HomeState implements _HomeState {
 abstract class _HomeState implements HomeState {
   factory _HomeState(
       {required final bool isLoading,
-      required final String result,
+      final List<RestaurantDataModel>? result,
+      final List<TableMenuList>? tabMenuListDataModel,
+      final List<CategoryDishes>? categoryDishesDataModel,
+      required final List<Tab> tabs,
+      required final int length,
       required final Option<Either<HomeFailure, List<RestaurantDataModel>>>
           saveFailureOrSuccessOption}) = _$_HomeState;
 
   @override
   bool get isLoading;
   @override
-  String get result;
+  List<RestaurantDataModel>? get result;
+  @override
+  List<TableMenuList>? get tabMenuListDataModel;
+  @override
+  List<CategoryDishes>? get categoryDishesDataModel;
+  @override
+  List<Tab> get tabs;
+  @override
+  int get length;
   @override
   Option<Either<HomeFailure, List<RestaurantDataModel>>>
       get saveFailureOrSuccessOption;
