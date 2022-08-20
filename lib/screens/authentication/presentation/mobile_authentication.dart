@@ -2,15 +2,19 @@
 
 import 'dart:developer';
 
+import 'package:auto_route/auto_route.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:http/http.dart';
 import 'package:zartech/core/colors.dart';
 import 'package:zartech/core/constants.dart';
+import 'package:zartech/router/router.dart';
 import 'package:zartech/screens/authentication/application/authentication_bloc.dart';
 import 'package:zartech/screens/authentication/presentation/otp_verification.dart';
 import 'package:zartech/screens/authentication/widgets/next_button.dart';
+import 'package:zartech/screens/home/application/home_bloc.dart';
 
 class MobileVerificationPage extends StatelessWidget {
   MobileVerificationPage({Key? key}) : super(key: key);
@@ -68,7 +72,11 @@ class GetMobileNumber extends StatelessWidget {
                       context
                           .read<AuthenticationBloc>()
                           .add(AuthenticationEvent.verifyPhoneNumber());
+                      context.router.push(HomeRoute());
                       log("its working");
+                      context
+                          .read<HomeBloc>()
+                          .add(HomeEvent.getRestaurantData());
                     }
                   },
                 )

@@ -26,6 +26,10 @@ class _$AppRouter extends RootStackRouter {
           orElse: () => const MobileVerificationRouteArgs());
       return MaterialPageX<dynamic>(
           routeData: routeData, child: MobileVerificationPage(key: args.key));
+    },
+    HomeRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const HomePage());
     }
   };
 
@@ -33,7 +37,8 @@ class _$AppRouter extends RootStackRouter {
   List<RouteConfig> get routes => [
         RouteConfig(AuthenticationRoute.name, path: '/'),
         RouteConfig(MobileVerificationRoute.name,
-            path: '/mobile-verification-page')
+            path: '/mobile-verification-page'),
+        RouteConfig(HomeRoute.name, path: '/home-page')
       ];
 }
 
@@ -66,4 +71,12 @@ class MobileVerificationRouteArgs {
   String toString() {
     return 'MobileVerificationRouteArgs{key: $key}';
   }
+}
+
+/// generated route for
+/// [HomePage]
+class HomeRoute extends PageRouteInfo<void> {
+  const HomeRoute() : super(HomeRoute.name, path: '/home-page');
+
+  static const String name = 'HomeRoute';
 }
