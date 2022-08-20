@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "128187426821",
+    "project_id": "zartech-807ab",
+    "storage_bucket": "zartech-807ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128187426821:android:d3b4f754cf0ab1d593146c",
+        "android_client_info": {
+          "package_name": "com.example.zartech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128187426821-vomhapdloke7qoc8ge2m02bscbmbr40t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zartech",
+            "certificate_hash": "3d802f3438d85ee0d56ef7ed78b47fcd05b3331d"
+          }
+        },
+        {
+          "client_id": "128187426821-4ept2jt3macf1ee4na0m935av6e8ak3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbWBWe6ScIEzbLOzxb8Z9tnJlKeoX6tRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128187426821-4ept2jt3macf1ee4na0m935av6e8ak3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
