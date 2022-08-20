@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:zartech/router/router.dart';
 import 'package:zartech/screens/authentication/application/authentication_bloc.dart';
+import 'package:zartech/screens/home/application/home_bloc.dart';
+import 'package:zartech/screens/home/domain/i_repo/i_home_repo.dart';
+import 'package:zartech/screens/home/infrastructure/home_repository.dart';
 
 class AppWidget extends StatelessWidget {
   AppWidget({Key? key}) : super(key: key);
@@ -12,6 +15,9 @@ class AppWidget extends StatelessWidget {
       providers: [
         BlocProvider<AuthenticationBloc>(
           create: (BuildContext context) => AuthenticationBloc(),
+        ),
+        BlocProvider<HomeBloc>(
+          create: (BuildContext context) => HomeBloc(HomeRepo()),
         ),
       ],
       child: MaterialApp.router(
