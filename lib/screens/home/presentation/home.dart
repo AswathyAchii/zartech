@@ -1,21 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:zartech/core/colors.dart';
+import 'package:zartech/router/router.dart';
 import 'package:zartech/screens/home/application/home_bloc.dart';
-import 'package:zartech/screens/loading/loading.dart';
-import 'package:zartech/screens/widgets/dishes_widget.dart';
+import 'package:zartech/widgets/dishes_widget.dart';
 
-List? text1 = [
-  Tab(
-    text: "",
-  )
-];
-String? text2 = "";
-String? text3 = "";
-String? text4 = "";
-String? text5;
-String? text6;
-int? length;
+import 'package:zartech/widgets/loading/loading.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -37,66 +28,71 @@ class HomePage extends StatelessWidget {
         if (state.isLoading == true) {
           showWidget = Loading();
         } else {
-          showWidget = tabs(state);
+          showWidget = tabs(state, context);
         }
         return showWidget;
       },
     );
   }
 
-  DefaultTabController tabs(HomeState state) {
+  DefaultTabController tabs(HomeState state, BuildContext context) {
     return DefaultTabController(
       initialIndex: 0,
       length: state.length,
       child: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
           backgroundColor: Colors.white,
-          elevation: 0,
-          leading: GestureDetector(
-            onTap: () {},
-            child: Icon(
-              Icons.menu,
-              color: normalBlack,
-              size: 25,
-            ),
-          ),
-          actions: [
-            Padding(
-              padding: EdgeInsets.only(
-                left: 10,
-                right: 15,
-              ),
+          appBar: AppBar(
+            backgroundColor: Colors.white,
+            elevation: 0,
+            leading: GestureDetector(
+              onTap: () {},
               child: Icon(
-                Icons.shopping_cart,
+                Icons.menu,
                 color: normalBlack,
                 size: 25,
               ),
-            )
-          ],
-          bottom: TabBar(
-            unselectedLabelColor: normalBlack,
-            labelColor: Colors.red,
-            indicatorColor: Colors.red,
-            isScrollable: true,
-            tabs: state.tabs,
+            ),
+            actions: [
+              Padding(
+                padding: EdgeInsets.only(
+                  left: 10,
+                  right: 15,
+                ),
+                child: GestureDetector(
+                  onTap: () {
+                    context.router.push(CartRoute());
+                  },
+                  child: Icon(
+                    Icons.shopping_cart,
+                    color: normalBlack,
+                    size: 25,
+                  ),
+                ),
+              )
+            ],
+            bottom: TabBar(
+              onTap: ((value) {
+                context.read<HomeBloc>().add(HomeEvent.getCurrentTabIndex(
+                    currenMenuCategorytIndex: value));
+              }),
+              unselectedLabelColor: normalBlack,
+              labelColor: Colors.red,
+              indicatorColor: Colors.red,
+              isScrollable: true,
+              tabs: state.tabs,
+            ),
           ),
-        ),
-        body: TabBarView(
-          children: [
-            Dishes(),
-            Container(color: Colors.blue),
-            Container(
-              color: Colors.red,
-            ),
-            Container(color: Colors.blue),
-            Container(
-              color: Colors.red,
-            ),
-            Container(color: Colors.blue),
-          ],
-        ),
-      ),
+          body: TabBarView(
+            physics: NeverScrollableScrollPhysics(),
+            children: [
+              Container(child: Dishes()),
+              Container(child: Dishes()),
+              Container(child: Dishes()),
+              Container(child: Dishes()),
+              Container(child: Dishes()),
+              Container(child: Dishes()),
+            ],
+          )),
     );
   }
 }

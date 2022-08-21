@@ -30,6 +30,10 @@ class _$AppRouter extends RootStackRouter {
     HomeRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
           routeData: routeData, child: const HomePage());
+    },
+    CartRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const CartPage());
     }
   };
 
@@ -38,7 +42,8 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(AuthenticationRoute.name, path: '/'),
         RouteConfig(MobileVerificationRoute.name,
             path: '/mobile-verification-page'),
-        RouteConfig(HomeRoute.name, path: '/home-page')
+        RouteConfig(HomeRoute.name, path: '/home-page'),
+        RouteConfig(CartRoute.name, path: '/cart-page')
       ];
 }
 
@@ -79,4 +84,12 @@ class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute() : super(HomeRoute.name, path: '/home-page');
 
   static const String name = 'HomeRoute';
+}
+
+/// generated route for
+/// [CartPage]
+class CartRoute extends PageRouteInfo<void> {
+  const CartRoute() : super(CartRoute.name, path: '/cart-page');
+
+  static const String name = 'CartRoute';
 }

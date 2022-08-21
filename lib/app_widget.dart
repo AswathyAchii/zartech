@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:zartech/router/router.dart';
 import 'package:zartech/screens/authentication/application/authentication_bloc.dart';
 import 'package:zartech/screens/home/application/home_bloc.dart';
-import 'package:zartech/screens/home/domain/i_repo/i_home_repo.dart';
 import 'package:zartech/screens/home/infrastructure/home_repository.dart';
 
 class AppWidget extends StatelessWidget {

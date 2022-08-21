@@ -1,11 +1,7 @@
 // ignore_for_file: unused_catch_clause
 
 import 'dart:convert';
-import 'dart:developer';
-
-import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:zartech/injection.dart';
 import 'package:zartech/screens/home/domain/failure/home_failure.dart';
 import 'package:dartz/dartz.dart';
 import 'package:zartech/screens/home/domain/i_repo/i_home_repo.dart';
