@@ -4,6 +4,7 @@ import 'package:zartech/app_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp();
   runApp(AppWidget());
 }

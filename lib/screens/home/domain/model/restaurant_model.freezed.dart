@@ -21,21 +21,21 @@ RestaurantDataModel _$RestaurantDataModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$RestaurantDataModel {
   @JsonKey(name: "restaurant_id")
-  String get restaurantId => throw _privateConstructorUsedError;
+  String? get restaurantId => throw _privateConstructorUsedError;
   @JsonKey(name: "restaurant_name")
-  String get restaurantName => throw _privateConstructorUsedError;
+  String? get restaurantName => throw _privateConstructorUsedError;
   @JsonKey(name: "restaurant_image")
-  String get restaurantImage => throw _privateConstructorUsedError;
+  String? get restaurantImage => throw _privateConstructorUsedError;
   @JsonKey(name: "table_id")
-  String get tableId => throw _privateConstructorUsedError;
+  String? get tableId => throw _privateConstructorUsedError;
   @JsonKey(name: "table_name")
-  String get tableName => throw _privateConstructorUsedError;
+  String? get tableName => throw _privateConstructorUsedError;
   @JsonKey(name: "branch_name")
-  String get branchName => throw _privateConstructorUsedError;
+  String? get branchName => throw _privateConstructorUsedError;
   @JsonKey(name: "nexturl")
-  String get nexturl => throw _privateConstructorUsedError;
+  String? get nexturl => throw _privateConstructorUsedError;
   @JsonKey(name: "table_menu_list")
-  List<TableMenuList> get tableMenuList => throw _privateConstructorUsedError;
+  List<TableMenuList>? get tableMenuList => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -49,14 +49,14 @@ abstract class $RestaurantDataModelCopyWith<$Res> {
           RestaurantDataModel value, $Res Function(RestaurantDataModel) then) =
       _$RestaurantDataModelCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: "restaurant_id") String restaurantId,
-      @JsonKey(name: "restaurant_name") String restaurantName,
-      @JsonKey(name: "restaurant_image") String restaurantImage,
-      @JsonKey(name: "table_id") String tableId,
-      @JsonKey(name: "table_name") String tableName,
-      @JsonKey(name: "branch_name") String branchName,
-      @JsonKey(name: "nexturl") String nexturl,
-      @JsonKey(name: "table_menu_list") List<TableMenuList> tableMenuList});
+      {@JsonKey(name: "restaurant_id") String? restaurantId,
+      @JsonKey(name: "restaurant_name") String? restaurantName,
+      @JsonKey(name: "restaurant_image") String? restaurantImage,
+      @JsonKey(name: "table_id") String? tableId,
+      @JsonKey(name: "table_name") String? tableName,
+      @JsonKey(name: "branch_name") String? branchName,
+      @JsonKey(name: "nexturl") String? nexturl,
+      @JsonKey(name: "table_menu_list") List<TableMenuList>? tableMenuList});
 }
 
 /// @nodoc
@@ -83,35 +83,35 @@ class _$RestaurantDataModelCopyWithImpl<$Res>
       restaurantId: restaurantId == freezed
           ? _value.restaurantId
           : restaurantId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       restaurantName: restaurantName == freezed
           ? _value.restaurantName
           : restaurantName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       restaurantImage: restaurantImage == freezed
           ? _value.restaurantImage
           : restaurantImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tableId: tableId == freezed
           ? _value.tableId
           : tableId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tableName: tableName == freezed
           ? _value.tableName
           : tableName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       branchName: branchName == freezed
           ? _value.branchName
           : branchName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tableMenuList: tableMenuList == freezed
           ? _value.tableMenuList
           : tableMenuList // ignore: cast_nullable_to_non_nullable
-              as List<TableMenuList>,
+              as List<TableMenuList>?,
     ));
   }
 }
@@ -124,14 +124,14 @@ abstract class _$$_RestaurantDataModelCopyWith<$Res>
       __$$_RestaurantDataModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: "restaurant_id") String restaurantId,
-      @JsonKey(name: "restaurant_name") String restaurantName,
-      @JsonKey(name: "restaurant_image") String restaurantImage,
-      @JsonKey(name: "table_id") String tableId,
-      @JsonKey(name: "table_name") String tableName,
-      @JsonKey(name: "branch_name") String branchName,
-      @JsonKey(name: "nexturl") String nexturl,
-      @JsonKey(name: "table_menu_list") List<TableMenuList> tableMenuList});
+      {@JsonKey(name: "restaurant_id") String? restaurantId,
+      @JsonKey(name: "restaurant_name") String? restaurantName,
+      @JsonKey(name: "restaurant_image") String? restaurantImage,
+      @JsonKey(name: "table_id") String? tableId,
+      @JsonKey(name: "table_name") String? tableName,
+      @JsonKey(name: "branch_name") String? branchName,
+      @JsonKey(name: "nexturl") String? nexturl,
+      @JsonKey(name: "table_menu_list") List<TableMenuList>? tableMenuList});
 }
 
 /// @nodoc
@@ -160,35 +160,35 @@ class __$$_RestaurantDataModelCopyWithImpl<$Res>
       restaurantId: restaurantId == freezed
           ? _value.restaurantId
           : restaurantId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       restaurantName: restaurantName == freezed
           ? _value.restaurantName
           : restaurantName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       restaurantImage: restaurantImage == freezed
           ? _value.restaurantImage
           : restaurantImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tableId: tableId == freezed
           ? _value.tableId
           : tableId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tableName: tableName == freezed
           ? _value.tableName
           : tableName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       branchName: branchName == freezed
           ? _value.branchName
           : branchName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tableMenuList: tableMenuList == freezed
           ? _value._tableMenuList
           : tableMenuList // ignore: cast_nullable_to_non_nullable
-              as List<TableMenuList>,
+              as List<TableMenuList>?,
     ));
   }
 }
@@ -212,7 +212,7 @@ class _$_RestaurantDataModel implements _RestaurantDataModel {
       @JsonKey(name: "nexturl")
           required this.nexturl,
       @JsonKey(name: "table_menu_list")
-          required final List<TableMenuList> tableMenuList})
+          required final List<TableMenuList>? tableMenuList})
       : _tableMenuList = tableMenuList;
 
   factory _$_RestaurantDataModel.fromJson(Map<String, dynamic> json) =>
@@ -220,31 +220,33 @@ class _$_RestaurantDataModel implements _RestaurantDataModel {
 
   @override
   @JsonKey(name: "restaurant_id")
-  final String restaurantId;
+  final String? restaurantId;
   @override
   @JsonKey(name: "restaurant_name")
-  final String restaurantName;
+  final String? restaurantName;
   @override
   @JsonKey(name: "restaurant_image")
-  final String restaurantImage;
+  final String? restaurantImage;
   @override
   @JsonKey(name: "table_id")
-  final String tableId;
+  final String? tableId;
   @override
   @JsonKey(name: "table_name")
-  final String tableName;
+  final String? tableName;
   @override
   @JsonKey(name: "branch_name")
-  final String branchName;
+  final String? branchName;
   @override
   @JsonKey(name: "nexturl")
-  final String nexturl;
-  final List<TableMenuList> _tableMenuList;
+  final String? nexturl;
+  final List<TableMenuList>? _tableMenuList;
   @override
   @JsonKey(name: "table_menu_list")
-  List<TableMenuList> get tableMenuList {
+  List<TableMenuList>? get tableMenuList {
+    final value = _tableMenuList;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_tableMenuList);
+    return EqualUnmodifiableListView(value);
   }
 
   @override
@@ -302,21 +304,21 @@ class _$_RestaurantDataModel implements _RestaurantDataModel {
 abstract class _RestaurantDataModel implements RestaurantDataModel {
   const factory _RestaurantDataModel(
           {@JsonKey(name: "restaurant_id")
-              required final String restaurantId,
+              required final String? restaurantId,
           @JsonKey(name: "restaurant_name")
-              required final String restaurantName,
+              required final String? restaurantName,
           @JsonKey(name: "restaurant_image")
-              required final String restaurantImage,
+              required final String? restaurantImage,
           @JsonKey(name: "table_id")
-              required final String tableId,
+              required final String? tableId,
           @JsonKey(name: "table_name")
-              required final String tableName,
+              required final String? tableName,
           @JsonKey(name: "branch_name")
-              required final String branchName,
+              required final String? branchName,
           @JsonKey(name: "nexturl")
-              required final String nexturl,
+              required final String? nexturl,
           @JsonKey(name: "table_menu_list")
-              required final List<TableMenuList> tableMenuList}) =
+              required final List<TableMenuList>? tableMenuList}) =
       _$_RestaurantDataModel;
 
   factory _RestaurantDataModel.fromJson(Map<String, dynamic> json) =
@@ -324,28 +326,28 @@ abstract class _RestaurantDataModel implements RestaurantDataModel {
 
   @override
   @JsonKey(name: "restaurant_id")
-  String get restaurantId;
+  String? get restaurantId;
   @override
   @JsonKey(name: "restaurant_name")
-  String get restaurantName;
+  String? get restaurantName;
   @override
   @JsonKey(name: "restaurant_image")
-  String get restaurantImage;
+  String? get restaurantImage;
   @override
   @JsonKey(name: "table_id")
-  String get tableId;
+  String? get tableId;
   @override
   @JsonKey(name: "table_name")
-  String get tableName;
+  String? get tableName;
   @override
   @JsonKey(name: "branch_name")
-  String get branchName;
+  String? get branchName;
   @override
   @JsonKey(name: "nexturl")
-  String get nexturl;
+  String? get nexturl;
   @override
   @JsonKey(name: "table_menu_list")
-  List<TableMenuList> get tableMenuList;
+  List<TableMenuList>? get tableMenuList;
   @override
   @JsonKey(ignore: true)
   _$$_RestaurantDataModelCopyWith<_$_RestaurantDataModel> get copyWith =>
@@ -359,15 +361,16 @@ TableMenuList _$TableMenuListFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$TableMenuList {
   @JsonKey(name: "menu_category")
-  String get menuCategory => throw _privateConstructorUsedError;
+  String? get menuCategory => throw _privateConstructorUsedError;
   @JsonKey(name: "menu_category_id")
-  String get menuCategoryId => throw _privateConstructorUsedError;
+  String? get menuCategoryId => throw _privateConstructorUsedError;
   @JsonKey(name: "menu_category_image")
-  String get menuCategoryImage => throw _privateConstructorUsedError;
+  String? get menuCategoryImage => throw _privateConstructorUsedError;
   @JsonKey(name: "nexturl")
-  String get nexturl => throw _privateConstructorUsedError;
+  String? get nexturl => throw _privateConstructorUsedError;
   @JsonKey(name: "category_dishes")
-  List<CategoryDishes> get categoryDishes => throw _privateConstructorUsedError;
+  List<CategoryDishes>? get categoryDishes =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -381,11 +384,11 @@ abstract class $TableMenuListCopyWith<$Res> {
           TableMenuList value, $Res Function(TableMenuList) then) =
       _$TableMenuListCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: "menu_category") String menuCategory,
-      @JsonKey(name: "menu_category_id") String menuCategoryId,
-      @JsonKey(name: "menu_category_image") String menuCategoryImage,
-      @JsonKey(name: "nexturl") String nexturl,
-      @JsonKey(name: "category_dishes") List<CategoryDishes> categoryDishes});
+      {@JsonKey(name: "menu_category") String? menuCategory,
+      @JsonKey(name: "menu_category_id") String? menuCategoryId,
+      @JsonKey(name: "menu_category_image") String? menuCategoryImage,
+      @JsonKey(name: "nexturl") String? nexturl,
+      @JsonKey(name: "category_dishes") List<CategoryDishes>? categoryDishes});
 }
 
 /// @nodoc
@@ -409,23 +412,23 @@ class _$TableMenuListCopyWithImpl<$Res>
       menuCategory: menuCategory == freezed
           ? _value.menuCategory
           : menuCategory // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       menuCategoryId: menuCategoryId == freezed
           ? _value.menuCategoryId
           : menuCategoryId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       menuCategoryImage: menuCategoryImage == freezed
           ? _value.menuCategoryImage
           : menuCategoryImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       categoryDishes: categoryDishes == freezed
           ? _value.categoryDishes
           : categoryDishes // ignore: cast_nullable_to_non_nullable
-              as List<CategoryDishes>,
+              as List<CategoryDishes>?,
     ));
   }
 }
@@ -438,11 +441,11 @@ abstract class _$$_TableMenuListCopyWith<$Res>
       __$$_TableMenuListCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: "menu_category") String menuCategory,
-      @JsonKey(name: "menu_category_id") String menuCategoryId,
-      @JsonKey(name: "menu_category_image") String menuCategoryImage,
-      @JsonKey(name: "nexturl") String nexturl,
-      @JsonKey(name: "category_dishes") List<CategoryDishes> categoryDishes});
+      {@JsonKey(name: "menu_category") String? menuCategory,
+      @JsonKey(name: "menu_category_id") String? menuCategoryId,
+      @JsonKey(name: "menu_category_image") String? menuCategoryImage,
+      @JsonKey(name: "nexturl") String? nexturl,
+      @JsonKey(name: "category_dishes") List<CategoryDishes>? categoryDishes});
 }
 
 /// @nodoc
@@ -468,23 +471,23 @@ class __$$_TableMenuListCopyWithImpl<$Res>
       menuCategory: menuCategory == freezed
           ? _value.menuCategory
           : menuCategory // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       menuCategoryId: menuCategoryId == freezed
           ? _value.menuCategoryId
           : menuCategoryId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       menuCategoryImage: menuCategoryImage == freezed
           ? _value.menuCategoryImage
           : menuCategoryImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       categoryDishes: categoryDishes == freezed
           ? _value._categoryDishes
           : categoryDishes // ignore: cast_nullable_to_non_nullable
-              as List<CategoryDishes>,
+              as List<CategoryDishes>?,
     ));
   }
 }
@@ -502,7 +505,7 @@ class _$_TableMenuList implements _TableMenuList {
       @JsonKey(name: "nexturl")
           required this.nexturl,
       @JsonKey(name: "category_dishes")
-          required final List<CategoryDishes> categoryDishes})
+          required final List<CategoryDishes>? categoryDishes})
       : _categoryDishes = categoryDishes;
 
   factory _$_TableMenuList.fromJson(Map<String, dynamic> json) =>
@@ -510,22 +513,24 @@ class _$_TableMenuList implements _TableMenuList {
 
   @override
   @JsonKey(name: "menu_category")
-  final String menuCategory;
+  final String? menuCategory;
   @override
   @JsonKey(name: "menu_category_id")
-  final String menuCategoryId;
+  final String? menuCategoryId;
   @override
   @JsonKey(name: "menu_category_image")
-  final String menuCategoryImage;
+  final String? menuCategoryImage;
   @override
   @JsonKey(name: "nexturl")
-  final String nexturl;
-  final List<CategoryDishes> _categoryDishes;
+  final String? nexturl;
+  final List<CategoryDishes>? _categoryDishes;
   @override
   @JsonKey(name: "category_dishes")
-  List<CategoryDishes> get categoryDishes {
+  List<CategoryDishes>? get categoryDishes {
+    final value = _categoryDishes;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_categoryDishes);
+    return EqualUnmodifiableListView(value);
   }
 
   @override
@@ -575,15 +580,15 @@ class _$_TableMenuList implements _TableMenuList {
 abstract class _TableMenuList implements TableMenuList {
   const factory _TableMenuList(
           {@JsonKey(name: "menu_category")
-              required final String menuCategory,
+              required final String? menuCategory,
           @JsonKey(name: "menu_category_id")
-              required final String menuCategoryId,
+              required final String? menuCategoryId,
           @JsonKey(name: "menu_category_image")
-              required final String menuCategoryImage,
+              required final String? menuCategoryImage,
           @JsonKey(name: "nexturl")
-              required final String nexturl,
+              required final String? nexturl,
           @JsonKey(name: "category_dishes")
-              required final List<CategoryDishes> categoryDishes}) =
+              required final List<CategoryDishes>? categoryDishes}) =
       _$_TableMenuList;
 
   factory _TableMenuList.fromJson(Map<String, dynamic> json) =
@@ -591,19 +596,19 @@ abstract class _TableMenuList implements TableMenuList {
 
   @override
   @JsonKey(name: "menu_category")
-  String get menuCategory;
+  String? get menuCategory;
   @override
   @JsonKey(name: "menu_category_id")
-  String get menuCategoryId;
+  String? get menuCategoryId;
   @override
   @JsonKey(name: "menu_category_image")
-  String get menuCategoryImage;
+  String? get menuCategoryImage;
   @override
   @JsonKey(name: "nexturl")
-  String get nexturl;
+  String? get nexturl;
   @override
   @JsonKey(name: "category_dishes")
-  List<CategoryDishes> get categoryDishes;
+  List<CategoryDishes>? get categoryDishes;
   @override
   @JsonKey(ignore: true)
   _$$_TableMenuListCopyWith<_$_TableMenuList> get copyWith =>
@@ -617,26 +622,26 @@ CategoryDishes _$CategoryDishesFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$CategoryDishes {
   @JsonKey(name: "dish_id")
-  String get dishId => throw _privateConstructorUsedError;
+  String? get dishId => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_name")
-  String get dishName => throw _privateConstructorUsedError;
+  String? get dishName => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_price")
-  int get dishPrice => throw _privateConstructorUsedError;
+  double? get dishPrice => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_image")
-  String get dishImage => throw _privateConstructorUsedError;
+  String? get dishImage => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_currency")
-  String get dishCurrency => throw _privateConstructorUsedError;
+  String? get dishCurrency => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_calories")
-  int get dishCalories => throw _privateConstructorUsedError;
+  double get dishCalories => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_description")
-  String get dishDescription => throw _privateConstructorUsedError;
+  String? get dishDescription => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_Availability")
-  bool get dishAvailability => throw _privateConstructorUsedError;
+  bool? get dishAvailability => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_Type")
-  int get dishType => throw _privateConstructorUsedError;
+  int? get dishType => throw _privateConstructorUsedError;
   @JsonKey(name: "nexturl")
-  int get nexturl => throw _privateConstructorUsedError;
-  List<AddonCat> get addonCat => throw _privateConstructorUsedError;
+  String? get nexturl => throw _privateConstructorUsedError;
+  List<AddonCat>? get addonCat => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -650,17 +655,17 @@ abstract class $CategoryDishesCopyWith<$Res> {
           CategoryDishes value, $Res Function(CategoryDishes) then) =
       _$CategoryDishesCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: "dish_id") String dishId,
-      @JsonKey(name: "dish_name") String dishName,
-      @JsonKey(name: "dish_price") int dishPrice,
-      @JsonKey(name: "dish_image") String dishImage,
-      @JsonKey(name: "dish_currency") String dishCurrency,
-      @JsonKey(name: "dish_calories") int dishCalories,
-      @JsonKey(name: "dish_description") String dishDescription,
-      @JsonKey(name: "dish_Availability") bool dishAvailability,
-      @JsonKey(name: "dish_Type") int dishType,
-      @JsonKey(name: "nexturl") int nexturl,
-      List<AddonCat> addonCat});
+      {@JsonKey(name: "dish_id") String? dishId,
+      @JsonKey(name: "dish_name") String? dishName,
+      @JsonKey(name: "dish_price") double? dishPrice,
+      @JsonKey(name: "dish_image") String? dishImage,
+      @JsonKey(name: "dish_currency") String? dishCurrency,
+      @JsonKey(name: "dish_calories") double dishCalories,
+      @JsonKey(name: "dish_description") String? dishDescription,
+      @JsonKey(name: "dish_Availability") bool? dishAvailability,
+      @JsonKey(name: "dish_Type") int? dishType,
+      @JsonKey(name: "nexturl") String? nexturl,
+      List<AddonCat>? addonCat});
 }
 
 /// @nodoc
@@ -690,47 +695,47 @@ class _$CategoryDishesCopyWithImpl<$Res>
       dishId: dishId == freezed
           ? _value.dishId
           : dishId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishName: dishName == freezed
           ? _value.dishName
           : dishName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishPrice: dishPrice == freezed
           ? _value.dishPrice
           : dishPrice // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double?,
       dishImage: dishImage == freezed
           ? _value.dishImage
           : dishImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCurrency: dishCurrency == freezed
           ? _value.dishCurrency
           : dishCurrency // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCalories: dishCalories == freezed
           ? _value.dishCalories
           : dishCalories // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double,
       dishDescription: dishDescription == freezed
           ? _value.dishDescription
           : dishDescription // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishAvailability: dishAvailability == freezed
           ? _value.dishAvailability
           : dishAvailability // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       dishType: dishType == freezed
           ? _value.dishType
           : dishType // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String?,
       addonCat: addonCat == freezed
           ? _value.addonCat
           : addonCat // ignore: cast_nullable_to_non_nullable
-              as List<AddonCat>,
+              as List<AddonCat>?,
     ));
   }
 }
@@ -743,17 +748,17 @@ abstract class _$$_CategoryDishesCopyWith<$Res>
       __$$_CategoryDishesCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: "dish_id") String dishId,
-      @JsonKey(name: "dish_name") String dishName,
-      @JsonKey(name: "dish_price") int dishPrice,
-      @JsonKey(name: "dish_image") String dishImage,
-      @JsonKey(name: "dish_currency") String dishCurrency,
-      @JsonKey(name: "dish_calories") int dishCalories,
-      @JsonKey(name: "dish_description") String dishDescription,
-      @JsonKey(name: "dish_Availability") bool dishAvailability,
-      @JsonKey(name: "dish_Type") int dishType,
-      @JsonKey(name: "nexturl") int nexturl,
-      List<AddonCat> addonCat});
+      {@JsonKey(name: "dish_id") String? dishId,
+      @JsonKey(name: "dish_name") String? dishName,
+      @JsonKey(name: "dish_price") double? dishPrice,
+      @JsonKey(name: "dish_image") String? dishImage,
+      @JsonKey(name: "dish_currency") String? dishCurrency,
+      @JsonKey(name: "dish_calories") double dishCalories,
+      @JsonKey(name: "dish_description") String? dishDescription,
+      @JsonKey(name: "dish_Availability") bool? dishAvailability,
+      @JsonKey(name: "dish_Type") int? dishType,
+      @JsonKey(name: "nexturl") String? nexturl,
+      List<AddonCat>? addonCat});
 }
 
 /// @nodoc
@@ -785,47 +790,47 @@ class __$$_CategoryDishesCopyWithImpl<$Res>
       dishId: dishId == freezed
           ? _value.dishId
           : dishId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishName: dishName == freezed
           ? _value.dishName
           : dishName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishPrice: dishPrice == freezed
           ? _value.dishPrice
           : dishPrice // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double?,
       dishImage: dishImage == freezed
           ? _value.dishImage
           : dishImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCurrency: dishCurrency == freezed
           ? _value.dishCurrency
           : dishCurrency // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCalories: dishCalories == freezed
           ? _value.dishCalories
           : dishCalories // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double,
       dishDescription: dishDescription == freezed
           ? _value.dishDescription
           : dishDescription // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishAvailability: dishAvailability == freezed
           ? _value.dishAvailability
           : dishAvailability // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       dishType: dishType == freezed
           ? _value.dishType
           : dishType // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String?,
       addonCat: addonCat == freezed
           ? _value._addonCat
           : addonCat // ignore: cast_nullable_to_non_nullable
-              as List<AddonCat>,
+              as List<AddonCat>?,
     ));
   }
 }
@@ -844,7 +849,7 @@ class _$_CategoryDishes implements _CategoryDishes {
       @JsonKey(name: "dish_Availability") required this.dishAvailability,
       @JsonKey(name: "dish_Type") required this.dishType,
       @JsonKey(name: "nexturl") required this.nexturl,
-      required final List<AddonCat> addonCat})
+      required final List<AddonCat>? addonCat})
       : _addonCat = addonCat;
 
   factory _$_CategoryDishes.fromJson(Map<String, dynamic> json) =>
@@ -852,39 +857,41 @@ class _$_CategoryDishes implements _CategoryDishes {
 
   @override
   @JsonKey(name: "dish_id")
-  final String dishId;
+  final String? dishId;
   @override
   @JsonKey(name: "dish_name")
-  final String dishName;
+  final String? dishName;
   @override
   @JsonKey(name: "dish_price")
-  final int dishPrice;
+  final double? dishPrice;
   @override
   @JsonKey(name: "dish_image")
-  final String dishImage;
+  final String? dishImage;
   @override
   @JsonKey(name: "dish_currency")
-  final String dishCurrency;
+  final String? dishCurrency;
   @override
   @JsonKey(name: "dish_calories")
-  final int dishCalories;
+  final double dishCalories;
   @override
   @JsonKey(name: "dish_description")
-  final String dishDescription;
+  final String? dishDescription;
   @override
   @JsonKey(name: "dish_Availability")
-  final bool dishAvailability;
+  final bool? dishAvailability;
   @override
   @JsonKey(name: "dish_Type")
-  final int dishType;
+  final int? dishType;
   @override
   @JsonKey(name: "nexturl")
-  final int nexturl;
-  final List<AddonCat> _addonCat;
+  final String? nexturl;
+  final List<AddonCat>? _addonCat;
   @override
-  List<AddonCat> get addonCat {
+  List<AddonCat>? get addonCat {
+    final value = _addonCat;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_addonCat);
+    return EqualUnmodifiableListView(value);
   }
 
   @override
@@ -945,53 +952,53 @@ class _$_CategoryDishes implements _CategoryDishes {
 
 abstract class _CategoryDishes implements CategoryDishes {
   const factory _CategoryDishes(
-      {@JsonKey(name: "dish_id") required final String dishId,
-      @JsonKey(name: "dish_name") required final String dishName,
-      @JsonKey(name: "dish_price") required final int dishPrice,
-      @JsonKey(name: "dish_image") required final String dishImage,
-      @JsonKey(name: "dish_currency") required final String dishCurrency,
-      @JsonKey(name: "dish_calories") required final int dishCalories,
-      @JsonKey(name: "dish_description") required final String dishDescription,
-      @JsonKey(name: "dish_Availability") required final bool dishAvailability,
-      @JsonKey(name: "dish_Type") required final int dishType,
-      @JsonKey(name: "nexturl") required final int nexturl,
-      required final List<AddonCat> addonCat}) = _$_CategoryDishes;
+      {@JsonKey(name: "dish_id") required final String? dishId,
+      @JsonKey(name: "dish_name") required final String? dishName,
+      @JsonKey(name: "dish_price") required final double? dishPrice,
+      @JsonKey(name: "dish_image") required final String? dishImage,
+      @JsonKey(name: "dish_currency") required final String? dishCurrency,
+      @JsonKey(name: "dish_calories") required final double dishCalories,
+      @JsonKey(name: "dish_description") required final String? dishDescription,
+      @JsonKey(name: "dish_Availability") required final bool? dishAvailability,
+      @JsonKey(name: "dish_Type") required final int? dishType,
+      @JsonKey(name: "nexturl") required final String? nexturl,
+      required final List<AddonCat>? addonCat}) = _$_CategoryDishes;
 
   factory _CategoryDishes.fromJson(Map<String, dynamic> json) =
       _$_CategoryDishes.fromJson;
 
   @override
   @JsonKey(name: "dish_id")
-  String get dishId;
+  String? get dishId;
   @override
   @JsonKey(name: "dish_name")
-  String get dishName;
+  String? get dishName;
   @override
   @JsonKey(name: "dish_price")
-  int get dishPrice;
+  double? get dishPrice;
   @override
   @JsonKey(name: "dish_image")
-  String get dishImage;
+  String? get dishImage;
   @override
   @JsonKey(name: "dish_currency")
-  String get dishCurrency;
+  String? get dishCurrency;
   @override
   @JsonKey(name: "dish_calories")
-  int get dishCalories;
+  double get dishCalories;
   @override
   @JsonKey(name: "dish_description")
-  String get dishDescription;
+  String? get dishDescription;
   @override
   @JsonKey(name: "dish_Availability")
-  bool get dishAvailability;
+  bool? get dishAvailability;
   @override
   @JsonKey(name: "dish_Type")
-  int get dishType;
+  int? get dishType;
   @override
   @JsonKey(name: "nexturl")
-  int get nexturl;
+  String? get nexturl;
   @override
-  List<AddonCat> get addonCat;
+  List<AddonCat>? get addonCat;
   @override
   @JsonKey(ignore: true)
   _$$_CategoryDishesCopyWith<_$_CategoryDishes> get copyWith =>
@@ -1005,14 +1012,14 @@ AddonCat _$AddonCatFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$AddonCat {
   @JsonKey(name: "addon_category")
-  String get addonCategory => throw _privateConstructorUsedError;
+  String? get addonCategory => throw _privateConstructorUsedError;
   @JsonKey(name: "addon_category_id")
-  String get addonCategoryId => throw _privateConstructorUsedError;
+  String? get addonCategoryId => throw _privateConstructorUsedError;
   @JsonKey(name: "addon_selection")
-  int get addonSelection => throw _privateConstructorUsedError;
+  int? get addonSelection => throw _privateConstructorUsedError;
   @JsonKey(name: "nexturl")
-  String get nexturl => throw _privateConstructorUsedError;
-  List<Addons> get addons => throw _privateConstructorUsedError;
+  String? get nexturl => throw _privateConstructorUsedError;
+  List<Addons>? get addons => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1025,11 +1032,11 @@ abstract class $AddonCatCopyWith<$Res> {
   factory $AddonCatCopyWith(AddonCat value, $Res Function(AddonCat) then) =
       _$AddonCatCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: "addon_category") String addonCategory,
-      @JsonKey(name: "addon_category_id") String addonCategoryId,
-      @JsonKey(name: "addon_selection") int addonSelection,
-      @JsonKey(name: "nexturl") String nexturl,
-      List<Addons> addons});
+      {@JsonKey(name: "addon_category") String? addonCategory,
+      @JsonKey(name: "addon_category_id") String? addonCategoryId,
+      @JsonKey(name: "addon_selection") int? addonSelection,
+      @JsonKey(name: "nexturl") String? nexturl,
+      List<Addons>? addons});
 }
 
 /// @nodoc
@@ -1052,23 +1059,23 @@ class _$AddonCatCopyWithImpl<$Res> implements $AddonCatCopyWith<$Res> {
       addonCategory: addonCategory == freezed
           ? _value.addonCategory
           : addonCategory // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       addonCategoryId: addonCategoryId == freezed
           ? _value.addonCategoryId
           : addonCategoryId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       addonSelection: addonSelection == freezed
           ? _value.addonSelection
           : addonSelection // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       addons: addons == freezed
           ? _value.addons
           : addons // ignore: cast_nullable_to_non_nullable
-              as List<Addons>,
+              as List<Addons>?,
     ));
   }
 }
@@ -1080,11 +1087,11 @@ abstract class _$$_AddonCatCopyWith<$Res> implements $AddonCatCopyWith<$Res> {
       __$$_AddonCatCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: "addon_category") String addonCategory,
-      @JsonKey(name: "addon_category_id") String addonCategoryId,
-      @JsonKey(name: "addon_selection") int addonSelection,
-      @JsonKey(name: "nexturl") String nexturl,
-      List<Addons> addons});
+      {@JsonKey(name: "addon_category") String? addonCategory,
+      @JsonKey(name: "addon_category_id") String? addonCategoryId,
+      @JsonKey(name: "addon_selection") int? addonSelection,
+      @JsonKey(name: "nexturl") String? nexturl,
+      List<Addons>? addons});
 }
 
 /// @nodoc
@@ -1109,23 +1116,23 @@ class __$$_AddonCatCopyWithImpl<$Res> extends _$AddonCatCopyWithImpl<$Res>
       addonCategory: addonCategory == freezed
           ? _value.addonCategory
           : addonCategory // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       addonCategoryId: addonCategoryId == freezed
           ? _value.addonCategoryId
           : addonCategoryId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       addonSelection: addonSelection == freezed
           ? _value.addonSelection
           : addonSelection // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       nexturl: nexturl == freezed
           ? _value.nexturl
           : nexturl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       addons: addons == freezed
           ? _value._addons
           : addons // ignore: cast_nullable_to_non_nullable
-              as List<Addons>,
+              as List<Addons>?,
     ));
   }
 }
@@ -1138,7 +1145,7 @@ class _$_AddonCat implements _AddonCat {
       @JsonKey(name: "addon_category_id") required this.addonCategoryId,
       @JsonKey(name: "addon_selection") required this.addonSelection,
       @JsonKey(name: "nexturl") required this.nexturl,
-      required final List<Addons> addons})
+      required final List<Addons>? addons})
       : _addons = addons;
 
   factory _$_AddonCat.fromJson(Map<String, dynamic> json) =>
@@ -1146,21 +1153,23 @@ class _$_AddonCat implements _AddonCat {
 
   @override
   @JsonKey(name: "addon_category")
-  final String addonCategory;
+  final String? addonCategory;
   @override
   @JsonKey(name: "addon_category_id")
-  final String addonCategoryId;
+  final String? addonCategoryId;
   @override
   @JsonKey(name: "addon_selection")
-  final int addonSelection;
+  final int? addonSelection;
   @override
   @JsonKey(name: "nexturl")
-  final String nexturl;
-  final List<Addons> _addons;
+  final String? nexturl;
+  final List<Addons>? _addons;
   @override
-  List<Addons> get addons {
+  List<Addons>? get addons {
+    final value = _addons;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_addons);
+    return EqualUnmodifiableListView(value);
   }
 
   @override
@@ -1208,28 +1217,32 @@ class _$_AddonCat implements _AddonCat {
 
 abstract class _AddonCat implements AddonCat {
   const factory _AddonCat(
-      {@JsonKey(name: "addon_category") required final String addonCategory,
-      @JsonKey(name: "addon_category_id") required final String addonCategoryId,
-      @JsonKey(name: "addon_selection") required final int addonSelection,
-      @JsonKey(name: "nexturl") required final String nexturl,
-      required final List<Addons> addons}) = _$_AddonCat;
+      {@JsonKey(name: "addon_category")
+          required final String? addonCategory,
+      @JsonKey(name: "addon_category_id")
+          required final String? addonCategoryId,
+      @JsonKey(name: "addon_selection")
+          required final int? addonSelection,
+      @JsonKey(name: "nexturl")
+          required final String? nexturl,
+      required final List<Addons>? addons}) = _$_AddonCat;
 
   factory _AddonCat.fromJson(Map<String, dynamic> json) = _$_AddonCat.fromJson;
 
   @override
   @JsonKey(name: "addon_category")
-  String get addonCategory;
+  String? get addonCategory;
   @override
   @JsonKey(name: "addon_category_id")
-  String get addonCategoryId;
+  String? get addonCategoryId;
   @override
   @JsonKey(name: "addon_selection")
-  int get addonSelection;
+  int? get addonSelection;
   @override
   @JsonKey(name: "nexturl")
-  String get nexturl;
+  String? get nexturl;
   @override
-  List<Addons> get addons;
+  List<Addons>? get addons;
   @override
   @JsonKey(ignore: true)
   _$$_AddonCatCopyWith<_$_AddonCat> get copyWith =>
@@ -1243,23 +1256,23 @@ Addons _$AddonsFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Addons {
   @JsonKey(name: "dish_id")
-  String get dishId => throw _privateConstructorUsedError;
+  String? get dishId => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_name")
-  String get dishName => throw _privateConstructorUsedError;
+  String? get dishName => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_price")
-  int get dishPrice => throw _privateConstructorUsedError;
+  double? get dishPrice => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_image")
-  String get dishImage => throw _privateConstructorUsedError;
+  String? get dishImage => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_currency")
-  String get dishCurrency => throw _privateConstructorUsedError;
+  String? get dishCurrency => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_calories")
-  int get dishCalories => throw _privateConstructorUsedError;
+  double? get dishCalories => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_description")
-  String get dishDescription => throw _privateConstructorUsedError;
+  String? get dishDescription => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_Availability")
-  bool get dishAvailability => throw _privateConstructorUsedError;
+  bool? get dishAvailability => throw _privateConstructorUsedError;
   @JsonKey(name: "dish_Type")
-  int get dishType => throw _privateConstructorUsedError;
+  int? get dishType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1271,15 +1284,15 @@ abstract class $AddonsCopyWith<$Res> {
   factory $AddonsCopyWith(Addons value, $Res Function(Addons) then) =
       _$AddonsCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: "dish_id") String dishId,
-      @JsonKey(name: "dish_name") String dishName,
-      @JsonKey(name: "dish_price") int dishPrice,
-      @JsonKey(name: "dish_image") String dishImage,
-      @JsonKey(name: "dish_currency") String dishCurrency,
-      @JsonKey(name: "dish_calories") int dishCalories,
-      @JsonKey(name: "dish_description") String dishDescription,
-      @JsonKey(name: "dish_Availability") bool dishAvailability,
-      @JsonKey(name: "dish_Type") int dishType});
+      {@JsonKey(name: "dish_id") String? dishId,
+      @JsonKey(name: "dish_name") String? dishName,
+      @JsonKey(name: "dish_price") double? dishPrice,
+      @JsonKey(name: "dish_image") String? dishImage,
+      @JsonKey(name: "dish_currency") String? dishCurrency,
+      @JsonKey(name: "dish_calories") double? dishCalories,
+      @JsonKey(name: "dish_description") String? dishDescription,
+      @JsonKey(name: "dish_Availability") bool? dishAvailability,
+      @JsonKey(name: "dish_Type") int? dishType});
 }
 
 /// @nodoc
@@ -1306,39 +1319,39 @@ class _$AddonsCopyWithImpl<$Res> implements $AddonsCopyWith<$Res> {
       dishId: dishId == freezed
           ? _value.dishId
           : dishId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishName: dishName == freezed
           ? _value.dishName
           : dishName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishPrice: dishPrice == freezed
           ? _value.dishPrice
           : dishPrice // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double?,
       dishImage: dishImage == freezed
           ? _value.dishImage
           : dishImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCurrency: dishCurrency == freezed
           ? _value.dishCurrency
           : dishCurrency // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCalories: dishCalories == freezed
           ? _value.dishCalories
           : dishCalories // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double?,
       dishDescription: dishDescription == freezed
           ? _value.dishDescription
           : dishDescription // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishAvailability: dishAvailability == freezed
           ? _value.dishAvailability
           : dishAvailability // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       dishType: dishType == freezed
           ? _value.dishType
           : dishType // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -1349,15 +1362,15 @@ abstract class _$$_AddonsCopyWith<$Res> implements $AddonsCopyWith<$Res> {
       __$$_AddonsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: "dish_id") String dishId,
-      @JsonKey(name: "dish_name") String dishName,
-      @JsonKey(name: "dish_price") int dishPrice,
-      @JsonKey(name: "dish_image") String dishImage,
-      @JsonKey(name: "dish_currency") String dishCurrency,
-      @JsonKey(name: "dish_calories") int dishCalories,
-      @JsonKey(name: "dish_description") String dishDescription,
-      @JsonKey(name: "dish_Availability") bool dishAvailability,
-      @JsonKey(name: "dish_Type") int dishType});
+      {@JsonKey(name: "dish_id") String? dishId,
+      @JsonKey(name: "dish_name") String? dishName,
+      @JsonKey(name: "dish_price") double? dishPrice,
+      @JsonKey(name: "dish_image") String? dishImage,
+      @JsonKey(name: "dish_currency") String? dishCurrency,
+      @JsonKey(name: "dish_calories") double? dishCalories,
+      @JsonKey(name: "dish_description") String? dishDescription,
+      @JsonKey(name: "dish_Availability") bool? dishAvailability,
+      @JsonKey(name: "dish_Type") int? dishType});
 }
 
 /// @nodoc
@@ -1385,39 +1398,39 @@ class __$$_AddonsCopyWithImpl<$Res> extends _$AddonsCopyWithImpl<$Res>
       dishId: dishId == freezed
           ? _value.dishId
           : dishId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishName: dishName == freezed
           ? _value.dishName
           : dishName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishPrice: dishPrice == freezed
           ? _value.dishPrice
           : dishPrice // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double?,
       dishImage: dishImage == freezed
           ? _value.dishImage
           : dishImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCurrency: dishCurrency == freezed
           ? _value.dishCurrency
           : dishCurrency // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishCalories: dishCalories == freezed
           ? _value.dishCalories
           : dishCalories // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double?,
       dishDescription: dishDescription == freezed
           ? _value.dishDescription
           : dishDescription // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       dishAvailability: dishAvailability == freezed
           ? _value.dishAvailability
           : dishAvailability // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       dishType: dishType == freezed
           ? _value.dishType
           : dishType // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -1441,31 +1454,31 @@ class _$_Addons implements _Addons {
 
   @override
   @JsonKey(name: "dish_id")
-  final String dishId;
+  final String? dishId;
   @override
   @JsonKey(name: "dish_name")
-  final String dishName;
+  final String? dishName;
   @override
   @JsonKey(name: "dish_price")
-  final int dishPrice;
+  final double? dishPrice;
   @override
   @JsonKey(name: "dish_image")
-  final String dishImage;
+  final String? dishImage;
   @override
   @JsonKey(name: "dish_currency")
-  final String dishCurrency;
+  final String? dishCurrency;
   @override
   @JsonKey(name: "dish_calories")
-  final int dishCalories;
+  final double? dishCalories;
   @override
   @JsonKey(name: "dish_description")
-  final String dishDescription;
+  final String? dishDescription;
   @override
   @JsonKey(name: "dish_Availability")
-  final bool dishAvailability;
+  final bool? dishAvailability;
   @override
   @JsonKey(name: "dish_Type")
-  final int dishType;
+  final int? dishType;
 
   @override
   String toString() {
@@ -1521,45 +1534,45 @@ class _$_Addons implements _Addons {
 
 abstract class _Addons implements Addons {
   const factory _Addons(
-      {@JsonKey(name: "dish_id") required final String dishId,
-      @JsonKey(name: "dish_name") required final String dishName,
-      @JsonKey(name: "dish_price") required final int dishPrice,
-      @JsonKey(name: "dish_image") required final String dishImage,
-      @JsonKey(name: "dish_currency") required final String dishCurrency,
-      @JsonKey(name: "dish_calories") required final int dishCalories,
-      @JsonKey(name: "dish_description") required final String dishDescription,
-      @JsonKey(name: "dish_Availability") required final bool dishAvailability,
-      @JsonKey(name: "dish_Type") required final int dishType}) = _$_Addons;
+      {@JsonKey(name: "dish_id") required final String? dishId,
+      @JsonKey(name: "dish_name") required final String? dishName,
+      @JsonKey(name: "dish_price") required final double? dishPrice,
+      @JsonKey(name: "dish_image") required final String? dishImage,
+      @JsonKey(name: "dish_currency") required final String? dishCurrency,
+      @JsonKey(name: "dish_calories") required final double? dishCalories,
+      @JsonKey(name: "dish_description") required final String? dishDescription,
+      @JsonKey(name: "dish_Availability") required final bool? dishAvailability,
+      @JsonKey(name: "dish_Type") required final int? dishType}) = _$_Addons;
 
   factory _Addons.fromJson(Map<String, dynamic> json) = _$_Addons.fromJson;
 
   @override
   @JsonKey(name: "dish_id")
-  String get dishId;
+  String? get dishId;
   @override
   @JsonKey(name: "dish_name")
-  String get dishName;
+  String? get dishName;
   @override
   @JsonKey(name: "dish_price")
-  int get dishPrice;
+  double? get dishPrice;
   @override
   @JsonKey(name: "dish_image")
-  String get dishImage;
+  String? get dishImage;
   @override
   @JsonKey(name: "dish_currency")
-  String get dishCurrency;
+  String? get dishCurrency;
   @override
   @JsonKey(name: "dish_calories")
-  int get dishCalories;
+  double? get dishCalories;
   @override
   @JsonKey(name: "dish_description")
-  String get dishDescription;
+  String? get dishDescription;
   @override
   @JsonKey(name: "dish_Availability")
-  bool get dishAvailability;
+  bool? get dishAvailability;
   @override
   @JsonKey(name: "dish_Type")
-  int get dishType;
+  int? get dishType;
   @override
   @JsonKey(ignore: true)
   _$$_AddonsCopyWith<_$_Addons> get copyWith =>
